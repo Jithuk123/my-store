@@ -1,79 +1,13 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-warning fixed-top">
-  <a class="navbar-brand" href="#">My Store</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-    aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
-    <ul class="navbar-nav ">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Products</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Checkout</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-<div class="container wrapper">
-  <input class="form-control form-control-lg" type="text" placeholder="Search">
-  <div class="row">
-    <div class="col-4 d-flex align-items-stretch">
-      <div class="card">
-        <img src="https://www.sccpre.cat/mypng/detail/70-701797_discover-rolex-watches-analog-watch.png"
-          class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-4 d-flex align-items-stretch">
-      <div class="card">
-        <img src="http://www.thailand-traveler.com/images/thailand-traveler/4552-watch-rolex-png.jpg"
-          class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-4 d-flex align-items-stretch">
-      <div class="card">
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLtp3sM8xPLiv3YDAGbqgAiJ_x0EEGosqZxl3_aRbtlI_hEZn-"
-          class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-4 d-flex align-items-stretch">
-      <div class="card">
-        <img src="https://png.pngtree.com/png_detail/20181017/rolex-watches-blue-male-table-png-clipart_1752680.png"
-          class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-  </div>
+<app-header></app-header>
 
-  <footer style="height:20px">
-    <p class="text-center">&copy; Jithu</p>
-    
-  </footer>
+<div class="container wrapper">
+  <app-search></app-search>
+  <div class="row">
+      <app-product class="col-4 mt-5"></app-product>
+    <!-- <app-product class="col-4 d-flex align-items-stretch"></app-product>
+    <app-product class="col-4 d-flex align-items-stretch"></app-product>
+    <app-product class="col-4 d-flex align-items-stretch"></app-product> -->
+   
   </div>
+  </div>
+  <app-footer></app-footer>
