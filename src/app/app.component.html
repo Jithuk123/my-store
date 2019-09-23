@@ -3,11 +3,8 @@
 <div class="container wrapper">
   <app-search></app-search>
   <div class="row">
-      <app-product class="col-4 mt-5"></app-product>
-    <!-- <app-product class="col-4 d-flex align-items-stretch"></app-product>
-    <app-product class="col-4 d-flex align-items-stretch"></app-product>
-    <app-product class="col-4 d-flex align-items-stretch"></app-product> -->
-   
+      <app-product *ngFor="let item of products" class="col-4 mt-5 d-flex" [product]="item"></app-product>
+    <p>{{products | json}}</p>
   </div>
   </div>
   <app-footer></app-footer>
