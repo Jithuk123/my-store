@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Product } from './models/Product';
-import { ProductService } from './service/product.service';
+// import { Product } from './models/Product';
+// import { ProductService } from './service/product.service';
 import { TouchSequence } from 'selenium-webdriver';
 
 @Component({
@@ -11,13 +11,7 @@ import { TouchSequence } from 'selenium-webdriver';
 export class AppComponent {
 
   title = 'my-store';
-  products: Product[] = [];
 
-  constructor(private productService: ProductService) {
-  this.productService.getProducts().subscribe((res: Product[]) => {
-    this.products = res;
-  });
 
-  }
 
 }

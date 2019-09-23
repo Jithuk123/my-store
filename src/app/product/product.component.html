@@ -5,8 +5,8 @@
         <div class="card-body">
           <h5 class="card-title">{{product.title |uppercase}}</h5>
           <p class="card-text">{{product.description}}</p>
-          <a  (click)="addToCart()"  href="#" class="btn btn-warning" *ngIf ="product.isAvailable">ADD TO CART</a>
-          <a  (click)="buy()"  href="#" class="btn btn-dark">Details</a>
+          <a  (click)="addToCart()"   class="btn btn-warning" *ngIf ="product.isAvailable">ADD TO CART</a>
+          <a (click) = "gotodetails(product.id)"  class="btn btn-dark">Details</a>
         </div>
       </div>
     <!-- </div> -->

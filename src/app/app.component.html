@@ -1,10 +1,6 @@
 <app-header></app-header>
 
 <div class="container wrapper">
-  <app-search></app-search>
-  <div class="row">
-      <app-product *ngFor="let item of products" class="col-4 mt-5 d-flex" [product]="item"></app-product>
-    <p>{{products | json}}</p>
-  </div>
-  </div>
-  <app-footer></app-footer>
+ <router-outlet></router-outlet>
+</div>
+<app-footer></app-footer>

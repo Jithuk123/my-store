@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-product',
@@ -6,15 +7,16 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit {
-@Input() product;
+  @Input() product;
 
-constructor() { }
-
-addToCart() {
-console.log("clicked")
-}
-
-ngOnInit() {
-}
+  constructor(private router: Router) { }
+  gotodetails(productId) {
+    this.router.navigate(['product', productId]);
+  }
+  // addToCart() {
+  // console.log("clicked")
+  // }
+  ngOnInit() {
+  }
 
 }

@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-    <a class="navbar-brand" href="#">My Store</a>
+    <a class="navbar-brand" routerLink=" ">My Store</a>
     <img src="https://lh3.googleusercontent.com/e9GFOYFPjcW_Hage2Ge_me60s5Wyo4iGWDQlb3CZJ84GZWzYPaUSsAkGsopiQH4ZHxiCrQo=s120" height="40px">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
       aria-expanded="false" aria-label="Toggle navigation">
@@ -7,14 +7,12 @@
     </button>
     <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
       <ul class="navbar-nav ">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+       
+        <li class="nav-item"  routerLinkActive="active"[routerLinkActiveOptions]="{ exact:true}">
+          <a class="nav-link" routerLink="">Products</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Products</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Checkout</a>
+        <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact:true}">
+          <a class="nav-link" routerLink="checkout">Checkout</a>
         </li>
       </ul>
     </div>
